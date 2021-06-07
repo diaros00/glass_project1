@@ -894,6 +894,8 @@ def add_have_defect(request):
             counter = counter + 1
         else:
             counter = counter
+
+            
             
 
         status_defect_for_check = 0
@@ -904,7 +906,7 @@ def add_have_defect(request):
         'inputModelCode':inputModelCode,
         'inputModelImage':inputModelImage,
         'defects':data_defect,
-    'datepick_for_check' : datepick_for_check,
+        'datepick_for_check' : datepick_for_check,
         'counter':counter})
 
     else:
@@ -915,7 +917,7 @@ def add_have_defect(request):
         'inputModelCode':inputModelCode,
         'inputModelImage':inputModelImage,
         'defects':data_defect,
-    'datepick_for_check' : datepick_for_check,
+        'datepick_for_check' : datepick_for_check,
         'counter':counter})
 
 

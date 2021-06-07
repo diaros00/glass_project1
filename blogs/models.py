@@ -24,9 +24,11 @@ class modelGlass(models.Model):
         return self.model_name + ": " + str(self.model_image)
 
 class modelGlassWithDefect(models.Model):
-    
-    date_create = models.DateTimeField(default=datetime.now, blank=True)
 
+
+    id_glass =  models.CharField(max_length=200)
+    date_create = models.DateTimeField(default=datetime.now, blank=True)
+    
     model_code = models.CharField(max_length=200)
     model_name = models.CharField(max_length=200)
     model_desc = models.CharField(max_length=200,null=True)
