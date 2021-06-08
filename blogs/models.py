@@ -26,7 +26,7 @@ class modelGlass(models.Model):
 class modelGlassWithDefect(models.Model):
 
 
-    id_glass =  models.CharField(max_length=200)
+    id_glass =  models.IntegerField()
     date_create = models.DateTimeField(default=datetime.now, blank=True)
     
     model_code = models.CharField(max_length=200)
